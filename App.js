@@ -27,7 +27,7 @@ export default function App() {
       <Text>Open up App.js to start working on your app!</Text>
       { 
         notifications.map(notification => {
-          return <Text>{notification.alert}. {notification.preview}</Text>
+          return <Text>{notification.alert}. {notification.preview}, {notification.post_id}</Text>
         })
       }
       <StatusBar style="auto" />
