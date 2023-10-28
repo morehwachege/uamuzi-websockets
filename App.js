@@ -12,7 +12,6 @@ export default function App() {
 
   useEffect(() => {
     socket.addEventListener('message', (event) => {
-      // setMessage((message) => message = event.data)
       let data = JSON.parse(event.data);
       if (data.type == 'ping'){
   
